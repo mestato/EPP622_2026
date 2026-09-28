@@ -184,7 +184,9 @@ From `this folder` that holds all my analysis, here is the directory structure (
 
 ## Assignment Analysis - Questions to answer
 
-> Which samples differ from each other in *read count* versus in *read quality*? Why does that distinction matter?
+Minimum one paragraph each.
+
+> How did samples differ from each other in read count versus in read quality? Why does each matter for SNP calling?
 
 > What are the relative merits and drawbacks of filtering? Interpret the above chart in terms of the original quality issues, and how those yielded different outcomes. When is filtering a good idea vs when it is it a bad idea? Think specifically about false positives vs false negatives. 
 
@@ -199,6 +201,8 @@ Model used:
 Date generated:
 
 Exact prompt:
+
+Minimum one paragraph each.
 
 > Three things it got right.
 
