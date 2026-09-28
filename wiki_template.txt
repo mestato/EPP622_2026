@@ -6,15 +6,20 @@
 
 **Each command needs a comment.** What are you running and why? No need to be too long, but something like "Running FastQC to check the quality of the reads."
 
-## Overview and Setup
 
-Name: -
+Your Name: -
+
 Server: -
+
 Repository URL: -
+
+## Setup
 
 Create directory and symbolically link provided files.
 
-Code:
+```bash
+commands
+```
 
 ## Step 1: Quality Control (FastQC + MultiQC)
 
@@ -111,10 +116,6 @@ Gentle: exclude variants with a QUAL less than 20 or less than 5 total read dept
 
 Stringent: exclude variants with a QUAL less than 30 or less than 10 total read depth across all samples or a site level mapping quality (root mean square) of less than 40
 
-bcftools \
-filter -e 'QUAL&lt;30 || INFO/MQ&lt;40 || INFO/DP&lt;10' \
--Oz -o test2.filter_moderate.vcf.gz test2.raw.vcf.gz
-
 ```bash
 #filtering gentle
 #filtering stringent
@@ -158,10 +159,10 @@ code
 
 ## Directory structure
 
-From `this folder` that holds all my analysis, here is the directory structure:
+From `this folder` that holds all my analysis, here is the directory structure (paste the output of: `tree .`):
 
 ```
-# paste the output of: tree .
+#output of tree command:
 ```
 
 ### Results
@@ -187,14 +188,16 @@ From `this folder` that holds all my analysis, here is the directory structure:
 
 > What are the relative merits and drawbacks of filtering? Interpret the above chart in terms of the original quality issues, and how those yielded different outcomes. When is filtering a good idea vs when it is it a bad idea? Think specifically about false positives vs false negatives. 
 
-> Pick **two false negatives** and **two false positives**, from at least two different samples. For each, tell me the coordinate, put in a screenshot of IGV or JBrwose, and explain the specific cause.
+> Pick **two false negatives** and **two false positives**, from any sample. For each, tell me the sample, tell me the chromosome and coordinate location, put in a screenshot of IGV or JBrowse, and explain the specific cause of the FN or FP call.
 
 ## AI Analysis - Pipeline Audit
 
 This is an evaluation of the pipeline you generated at the beginning of the learning module. Provide full sentences and thoughtful rationale.
 
 Model used:
+
 Date generated:
+
 Exact prompt:
 
 > Three things it got right.
