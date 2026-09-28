@@ -28,7 +28,7 @@ commands
 
 ### Results
 
-MultiQC report name: `_______`
+MultiQC report path and name: `_______`
 
 | Sample | Total reads | Quality issues? | Average Genome Coverage |
 | --- | --- | --- | --- |
@@ -52,7 +52,7 @@ commands
 ```
 ### Results
 
-MultiQC report name: `_______`
+MultiQC report path and name: `_______`
 
 | Sample | Reads before | Reads after | Mean length before | Mean length after | Average Genome Coverage After |
 | --- | --- | --- | --- | --- | --- |
@@ -72,6 +72,7 @@ commands
 
 
 ### Results
+MultiQC report path and name: `_______`
 
 | Sample | % mapped | % properly paired | Mean depth |
 | --- | --- | --- | --- |
@@ -91,6 +92,7 @@ commands
 ```
 
 ### Results
+bcftools stats report path and name: `_______`
 
 | Sample | Raw records | SNP records | Indel records | Multiallelic records |
 | --- | --- | --- | --- | --- |
@@ -124,6 +126,10 @@ filter -e 'QUAL&lt;30 || INFO/MQ&lt;40 || INFO/DP&lt;10' \
 ```
 
 ### Results
+
+bcftools stats report path and name for lenient filtering: `_______`
+
+bcftools stats report path and name: for stringent filtering: `_______`
 
 | Sample | SNP records raw | SNP records gentle | SNP records stringent |
 | --- | --- | --- | --- |
@@ -175,15 +181,15 @@ From `this folder` that holds all my analysis, here is the directory structure:
 | D | gentle | \- | \- | \- | \- | \- | \- |
 | D | strict | \- | \- | \- | \- | \- | \- |
 
-## Questions to answer
+## Assignment Analysis - Questions to answer
 
 > Which samples differ from each other in *read count* versus in *read quality*? Why does that distinction matter?
 
-> What are the relative merits and drawbacks of filtering? Interpret the above chart in terms of the original quality issues, and how those yielded different outcomes. When is filtering a good idea vs when it is it a bad idea?
+> What are the relative merits and drawbacks of filtering? Interpret the above chart in terms of the original quality issues, and how those yielded different outcomes. When is filtering a good idea vs when it is it a bad idea? Think specifically about false positives vs false negatives. 
 
 > Pick **two false negatives** and **two false positives**, from at least two different samples. For each, tell me the coordinate, put in a screenshot of IGV or JBrwose, and explain the specific cause.
 
-## AI Pipeline Audit
+## AI Analysis - Pipeline Audit
 
 This is an evaluation of the pipeline you generated at the beginning of the learning module. Provide full sentences and thoughtful rationale.
 
@@ -193,10 +199,10 @@ Exact prompt:
 
 > Three things it got right.
 
-> Three things you don't understand. What specifically would you need to learn in order to assess them?
+> Three things you don't understand and would want to learn more about before using. Or do you understand all of it? If so be ready to answer questions about it.
+
+> How specifically would you assess the results of this pipeline for accuracy?
 
 > What did the labs teach you that turned out to matter for evaluating the AI-generated code?
 
-> Compare the two approaches. The good and the bad, in your opinion.
-
-> What is the value of learning a topic before using AI on it — or is there none?
+> What is the value of learning about a computational genomics task before using AI for it — or is there none?
