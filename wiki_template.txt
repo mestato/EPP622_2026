@@ -110,7 +110,7 @@ bcftools stats report path and name: `_______`
 
 ### Commands
 
-I am going to try a gentle filtering and more stingent filtering.
+I am going to try a gentle filtering and more stingent filtering. (WARNING: These are different filters than what we have seen in class.)
 
 Gentle: exclude variants with a QUAL less than 20 or less than 5 total read depth across all samples.
 
